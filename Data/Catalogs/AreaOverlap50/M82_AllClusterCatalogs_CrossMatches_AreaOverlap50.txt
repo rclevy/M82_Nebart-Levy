@@ -1,0 +1,23 @@
+M82_AllClusterCatalogs_CrossMatches_AreaOverlap50.txt
+Written on 2025-09-22 13:54:42.860223
+
+The combined star cluster candidate catalogs for M82. The cross-matching assumes that cluster areas must overlap by >50%. Cross-matches are only reported within the MIRI subarray FoV, the smallest among the cluster catalogs.
+
+Data Sources:
+	Mayya+2008 	 HST-ACS
+	McCrady+2003 	 HST-NICMOS
+	Levy+2024 	 JWST-NIRCam
+	Nebart+in 	 JWST-MIRI
+	JimenezDonaire+ip 	 SMA-850micron
+
+Column Descriptions:
+	ID 	 The cluster identification in the original catalog
+	RA 	 The J2000 right ascension of the cluster center in the original catalog. For HST-based catalogs, the WCS coordinates have been corrected.
+	Dec 	 The J2000 declination of the cluster center in the original catalog. For HST-based catalogs, the WCS coordinates have been corrected.
+	Radius_arcsec 	 The cluster radius (in arcsec) used for the cross-matching.
+	Reference 	 The original reference for this star cluster candidate.
+	in_Mayya+2008 	 Whether the given cluster overlaps with source(s) in the Mayya+2008 catalog. Values are True (overlap found), False (no overlap found), or blank (cluster outside MIRI FoV). Matches with the Reference are always True.
+	in_McCrady+2003 	 The same as above, but for the McCrady+2003 catalog.
+	in_Levy+2024 	 The same as above, but for the Levy+2024 catalog.
+	in_Nebart+ip 	 The same as above, but for the Nebart+ip catalog.
+	in_JimenezDonaire+ip 	 The same as above, but for the JimenezDonaire+ip catalog.
